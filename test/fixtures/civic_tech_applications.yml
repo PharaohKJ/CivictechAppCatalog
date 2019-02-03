@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+5374:
+  name: 5374
+  url: http://5374.jp
+  description: |
+    「いつ、どのゴミが収集されているのか？」
+    ゴミの問題はどの地域でも深刻になりつつあります。 Code for Kanazawaでは、先ずは正しいゴミの捨て方に注目しました。例えばお引っ越しをされた場合や、新しく金沢市に住むことになった時、このアプリを使えばすぐに分かるように、目的と使い方をとてもシンプルにデザインしました。
+  tags: gomi
+  tech_tags: HTML, JavaScript
+  contest_tags:
+  app_type_tags: web
+  license_tags: mpl-2.0
+
+ha4go:
+  name: Ha4go
+  url: https://ha4go.net
+  description: |
+    地域課題を集約し可視化する。
+    地域によって多種多様な課題があります。私達はそれらの地域課題を集約し可視化することによって、私達を含む地域の人々に地域課題を自分ごととして発見して欲しいと考えました。
+  tags: matching, issue_correct
+  tech_tags: RoR
+  contest_tags:
+  app_type_tags: web
+  license_tags: mpl-2.0

@@ -1,0 +1,79 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# 解決しようとしてる課題タグ
+
+gomi:
+  name: ゴミ
+  type:
+
+matching:
+  name: マッチング
+  type:
+
+issue_correct:
+  name: 課題収集
+  type:
+
+# Tech Tag
+
+HTML:
+  name: HTML
+  type: TechTag
+
+JavaScript:
+  name: JavaScript
+  type: TechTag
+
+RoR:
+  name: Ruby on Rails
+  type: TechTag
+
+# 参加したコンテストタグ
+
+five:
+  name: ContestTagFive
+  type: ContestTag
+
+six:
+  name: ContestTagSix
+  type: ContestTag
+
+# Application Type
+
+opendata:
+  name: オープンデータ
+  type: AppTypeTag
+
+web:
+  name: ブラウザアプリ
+  type: AppTypeTag
+
+ios:
+  name: iPhoneアプリ
+  type: AppTypeTag
+
+android:
+  name: Androidアプリ
+  type: AppTypeTag
+
+smartphone:
+  name: スマホアプリ
+  type: AppTypeTag
+
+#### License Tags
+
+MIT:
+  name: MIT
+  type: LicenseTag
+
+Apache:
+  name: Apache
+  type: LicenseTag
+
+mpl-2.0:
+  name: Mozilla Public License 2.0
+  type: LicenseTag
+
+Other:
+  name: 独自
+  type: LicenseTag

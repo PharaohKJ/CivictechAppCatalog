@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-3">Civic Tech Application & OpenData カタログ</h1>
+    <p>シビックテックアプリやオープンデータのカタログサイトです by <a hre="https://twitter.com/PharaohKJ">PharaohKJ</a></p>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <% @civic_tech_applications.each do |cta| %>
+      <div class="col-md-4">
+        <h2><%= link_to cta.name, civic_tech_applications_path(cta) %></h2>
+        <%= simple_format(cta.description) %>
+        <% cta.tags.each do |t| %>
+          <%= link_to t.name, '', class: tag_type_css_map(t.type) %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

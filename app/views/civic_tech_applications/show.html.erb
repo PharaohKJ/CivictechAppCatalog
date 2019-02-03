@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @civic_tech_application.name %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @civic_tech_application.url %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @civic_tech_application.description %>
+</p>
+
+<%= link_to 'Edit', edit_civic_tech_application_path(@civic_tech_application) %> |
+<%= link_to 'Back', civic_tech_applications_path %>
