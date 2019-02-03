@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :tags
-  resources :civic_tech_applications
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :civic_tech_applications, only: [:show, :index]
+  root to: 'civic_tech_applications#index'
 end

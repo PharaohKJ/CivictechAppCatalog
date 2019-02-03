@@ -3,8 +3,12 @@
 <div class="jumbotron">
   <div class="container">
     <h1 class="display-3">Civic Tech Application & OpenData カタログ</h1>
-    <p>シビックテックアプリやオープンデータのカタログサイトです by <a hre="https://twitter.com/PharaohKJ">PharaohKJ</a></p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+    <p>シビックテックアプリやオープンデータのカタログサイトです。 by <a href="https://github.com/PharaohKJ">@PharaohKJ</a></p>
+    <p>本サイトのアイデアは <a href="https://2018.civictechforum.jp">CIVIC TECH FORUM 2018</a> にてブレストされた「他自治体に所属するみんなで充分に開発されているアプリの一覧性・検索性を向上することで、再度開発しちゃうことを防ぐ・元コードやデータに貢献する人を増やせるのではないか？」というアイデアが発端です。</p>
+      <p>いまのところ @PharaohKJ が勝手にデータを追加しています。アプリケーション・オープンデータの製作者に掲載許可はとっておりません。</p>
+    <p>ですが、掲載してほしいなどありましたらぜひご連絡ください。How To Contributes は後日かきますが、アプリ説明のfixture(YAML形式)を書いていただいてプルリクしていただこうと考えています。 </p>
+    <p>ほかにも機能追加などご要望ありましたら GitHub issue 経由でご連絡ください。</p>
+    <p><a class="btn btn-dark btn-lg" href="https://github.com/PharaohKJ/CivictechAppCatalog" role="button">GitHubへ »</a></p>
   </div>
 </div>
 
@@ -12,7 +16,7 @@
   <div class="row">
     <% @civic_tech_applications.each do |cta| %>
       <div class="col-md-4">
-        <h2><%= link_to cta.name, civic_tech_applications_path(cta) %></h2>
+        <h2><%= link_to cta.name, civic_tech_application_path(cta) %></h2>
         <%= simple_format(cta.description) %>
         <% cta.tags.each do |t| %>
           <%= link_to t.name, '', class: tag_type_css_map(t.type) %>

@@ -1,19 +1,18 @@
 <p id="notice"><%= notice %></p>
+<% app = @civic_tech_application %>
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-3"><%= app.name%></h1>
+    <h3><%= link_to( app.url, app.url )%></h2>
+    <%= simple_format(app.description) %>
+      <% app.tags.each do |t| %>
+        <%= link_to t.name, '', class: tag_type_css_map(t.type) %>
+      <% end %>
+    </p>
+  </div>
+</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @civic_tech_application.name %>
-</p>
-
-<p>
-  <strong>Url:</strong>
-  <%= @civic_tech_application.url %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @civic_tech_application.description %>
-</p>
-
-<%= link_to 'Edit', edit_civic_tech_application_path(@civic_tech_application) %> |
-<%= link_to 'Back', civic_tech_applications_path %>
+<div class="container">
+  <div class="row">
+  </div>
+</div>
