@@ -23,3 +23,15 @@ ha4go:
   contest_tags:
   app_type_tags: web
   license_tags: mpl-2.0
+
+kanazawashi_open_data:
+  name: 金沢市オープンデータカタログ
+  url: https://www4.city.kanazawa.lg.jp/11010/opendata/catalog.html
+  description: |
+    金沢市のオープンデータ一覧です。
+    金沢市のオープンデータをご利用の際には、利用規約及び各データに付されているライセンスの内容にしたがっていただくようお願いします。
+  tags:
+  tech_tags: csv, api, rdf
+  contest_tags:
+  app_type_tags: opendata
+  license_tags: cc, Other

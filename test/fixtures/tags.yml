@@ -28,6 +28,18 @@ RoR:
   name: Ruby on Rails
   type: TechTag
 
+csv:
+  name: CSV
+  type: TechTag
+
+api:
+  name: API
+  type: TechTag
+
+rdf:
+  name: RDF
+  type: TechTag
+
 # 参加したコンテストタグ
 
 five:
@@ -74,6 +86,10 @@ mpl-2.0:
   name: Mozilla Public License 2.0
   type: LicenseTag
 
+cc:
+  name: クリエイティブコモンズ
+  type: LicenseTag
+
 Other:
-  name: 独自
+  name: 他
   type: LicenseTag

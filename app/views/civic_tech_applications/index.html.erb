@@ -15,7 +15,7 @@
 <div class="container">
   <div class="row">
     <% @civic_tech_applications.each do |cta| %>
-      <div class="col-md-4">
+      <div class="col-md-6 mb-4">
         <h2><%= link_to cta.name, civic_tech_application_path(cta) %></h2>
         <%= simple_format(cta.description) %>
         <% cta.tags.each do |t| %>
